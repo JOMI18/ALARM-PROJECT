@@ -1,0 +1,472 @@
+.interface{
+    height: 88vh;
+    width: 40%;
+    box-shadow: 2px 2px 5px;
+    border-radius: 10px;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    background: linear-gradient(to left,aqua,  black , aqua, black, aqua);
+}
+
+.current-time{
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    border-radius: 10px;
+    height: 18vh;
+    background-color: black;
+    width: 40%;
+    box-shadow: 2px 2px 5px rgb(114, 114, 114);
+}
+.timer{
+    /* margin-top: 12px; */
+    height: 18vh;
+    width: 100%;
+    box-shadow: 0px 0px 1px rgb(255, 255, 255) ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.hour-counter{
+    width: 25%;
+    height: 18vh;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow:  0px 0px 1px rgb(247, 247, 250);
+border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.616) ;
+
+}
+.colon{
+    font-size: 25px;
+    width: 5%;
+    height: 18vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.minutes-counter{
+    width: 25%;
+    height: 18vh;
+    font-size: 25px;
+    display: flex;
+    border-radius: 5px;
+    color: white;
+    box-shadow:  0px 0px 1px rgb(247, 247, 250);
+    background-color:black ;
+    justify-content: center;
+    align-items: center;
+}
+
+.seconds-counter{
+    width: 25%;
+    height: 18vh;
+    font-size: 25px;
+    display: flex;
+    border-radius: 5px;
+    color: white;
+    box-shadow:  0px 0px 1px rgb(247, 247, 250);
+    background-color:black ;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.sign{
+    position: absolute;
+    left: 350px;
+    top: 3%;
+    font-size: 80px;
+    width: 40%;
+    color: gold;
+    height: 18vh;
+}
+.animate{
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes move {
+ 0%{
+    transform: translate(1px, 1px) rotate(0deg);
+ }
+ 10%{
+    transform: translate(-1px, -2px) rotate(-1deg);
+ }
+ 20%{
+    transform: translate(-3px, 0px) rotate(1deg);
+ }
+ 30%{
+    transform: translate(3px, 2px) rotate(0deg);
+ }
+ 40%{
+    transform: translate(1px, -1px) rotate(1deg);
+ }
+ 50%{
+    transform: translate(-1px, 2px) rotate(0deg);
+ }
+ 60%{
+    transform: translate(-3px, 1px) rotate(0deg);
+ }
+ 70%{
+    transform: translate(3px, 1px) rotate(-1deg);
+ }
+ 80%{
+    transform: translate(-1px, -1px) rotate(1deg);
+ }
+ 90%{
+    transform: translate(1px, 2px) rotate(0deg);
+ }
+ 100%{
+    transform: translate(1px, -2px) rotate(-1deg);
+ }
+
+}
+
+
+.alarm{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 180px;
+    width: 100%;
+    min-height: 200px;
+    background-color: black;
+    /* box-shadow: 0px 0px 2px; */
+}
+.timers{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /* border: 1px solid blue; */
+}
+.timers input{
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 30px;
+    outline: none;
+    border-radius: 5px;
+    width: 15%;
+    height: 100px;
+    border: 1px solid rgb(0, 0, 0);
+}   
+
+.btns{
+    position: absolute;
+    left: 380px;
+    width: 20%;
+    }
+.timers button{
+    margin-right: 25px;
+    margin-top: 15px;
+    width: 100%; 
+    height: 50px;
+    font-size: 15px;
+}
+
+
+.description{
+    position: absolute;
+    top: 72%;
+    left: 4%;
+     width: 80%;
+     border-radius: 10px;
+     height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid white;
+    justify-content: space-between;
+}
+.description p{
+    width: 220px;
+    height: 30px;
+    font-size: 14px;
+    padding: 2px;
+    font-weight: 600;
+    margin-top: 14px;
+}
+.description #alrmDescr{
+    width: 350px;
+    height: 30px;
+    outline: none;
+    margin-right: 17px;
+    font-size: 14px;
+}
+
+#display{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    padding-top: 5px;
+    font-weight: bolder;
+    padding-left: 10px;
+    position: absolute;
+    top: 260px;
+    color: white;
+    
+}
+.descr{
+    /* border: 1px solid black; */
+    font-size: 10px;
+    width: 250px;
+}
+.reminder{
+    width: 400px;
+    height: 100px;
+    background: linear-gradient( black, black, aqua);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 15px;
+    animation-name: remdr;
+    animation-duration: 7s;
+    margin-left: 80px;
+    margin-top: -100px;
+    animation-iteration-count: 7;
+}
+
+@keyframes remdr {
+    0%{
+        transform: translate(10px, 8px) rotate(1deg);
+     }
+     10%{
+        transform: translate(-1px, -2px) rotate(8deg);
+     }
+     20%{
+        transform: translate(-3px, 0px) rotate(12deg);
+     }
+     30%{
+        transform: translate(13px, 2px) rotate(20deg);
+     }
+     40%{
+        transform: translate(1px, -1px) rotate(10deg);
+     }
+     50%{
+        transform: translate(-1px, 12px) rotate(20deg);
+     }
+     60%{
+        transform: translate(-3px, 1px) rotate(10deg);
+     }
+     70%{
+        transform: translate(3px, 1px) rotate(-12deg);
+     }
+     80%{
+        transform: translate(-1px, -1px) rotate(1deg);
+     }
+     90%{
+        transform: translate(1px, 2px) rotate(0deg);
+     }
+     100%{
+        transform: translate(10px, -12px) rotate(-1deg);
+     }
+}
+
+@media (max-width:1300px) {
+ .reminder{
+    margin-left: 30px;
+ }   
+
+ .hour-counter,
+ .minutes-counter,
+ .seconds-counter{
+    margin-top: 15px;
+    height: 14vh;
+ }
+}
+@media (max-width:1209px) {
+    .btns{
+        left: 320px;
+        }
+        .sign{
+            left: 250px;
+            font-size: 75px;
+           
+        }
+}
+@media (max-width:1089px) {
+    .interface{
+        height: 78vh;
+    }
+    .reminder{
+        margin-left: 10px;
+     } 
+     .description{
+         width: 80%;
+    }
+    .description p{
+        width: 150px;
+        height: 30px;
+        font-size: 14px;
+        padding-left:15px;
+   
+    }
+    .description #alrmDescr{
+        width: 150px;
+        height: 30px;
+        outline: none;
+        margin-right: 17px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1010px) {
+    .reminder{
+        width: 250px;
+        margin-left: 50px;
+    }
+    .btns{
+        left: 280px;
+        }
+}
+@media (max-width:977px) {
+    .timers input{
+        margin-left: 12px;
+        font-size: 22px;
+        height: 80px;
+    }  
+    .timers button{
+        width: 70%; 
+        font-size: 12px;
+    }
+    .description{
+
+         width: 90%;
+   
+    }
+    .description p{
+        width: 200px;
+     padding-left:2px ;
+      padding-top:7px ;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .reminder{
+        margin-left: 25px;
+    }
+    .sign{
+        left: 300px;
+       
+    }
+    .interface{
+        height: 88vh;
+        width: 55%;
+        left: 22%;
+    }
+    .btns{
+        left: 330px;
+        }
+
+        .description #alrmDescr{
+            width: 420px;
+        
+        }
+}
+
+@media (max-width:730px) {
+    .btns{
+        left: 280px;
+        }
+        .sign{
+            left: 220px;
+           
+        }
+}
+@media (max-width:670px) {
+    .btns{
+        left: 280px;
+        }
+        .sign{
+            left: 220px;
+           
+        }
+        .interface{
+            height: 72vh;
+            width: 60%;
+            left: 20%;
+        }
+        .description #alrmDescr{
+            width: 280px;
+        
+        }
+}
+
+@media (max-width:560px) {
+    .interface{
+        height: 72vh;
+        width: 75%;
+        left: 10%;
+    }
+}
+@media (max-width:450px) {
+    .interface{
+        height: 70vh;
+        width: 85%;
+        left: 10%;
+    }
+}
+@media (max-width:390px) {
+    .interface{
+        height: 70vh;
+        width: 90%;
+        left: 5%;
+    }
+    .hour-counter,
+    .minutes-counter,
+    .seconds-counter{
+       margin-top: 20px;
+       height: 12vh;
+       font-size: 14px;
+    }
+    .btns{
+        left: 240px;
+        width: 15%;
+        }
+        .sign{
+            left: 180px;
+           
+        }
+        .description #alrmDescr{
+            width: 120px !important;
+        
+        }
+        .timers button{
+            width: 100%; 
+            height: 50px;
+            font-size: 10px;
+        }
+}
+
+@media (max-width:330px) {
+    .timers button{
+        margin-right: 5px;
+        font-size: 10px;
+    }
+    .btns{
+        left: 200px;
+        width: 15%;
+        }
+        .sign{
+            left: 150px;
+           
+        }
+        .reminder{
+            margin-left: 2px;
+        }
+        .description #alrmDescr{
+            width: 90px !important;
+        
+        }
+}

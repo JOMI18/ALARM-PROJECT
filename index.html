@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jomi's Alarm</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./BOOTSTRAP2.0/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<center>
+    <h1 class="alrm">ALARM</h1> <br><br>
+
+</center>
+
+    <div class="interface">
+
+        <div class="current-time">
+         <div class="timer">
+             <div class="hour-counter" id="hourS"></div>
+             <div class="colon">:</div>
+             <div class="minutes-counter" id="minutes"></div>
+                <div class="seconds-counter"  id="secondS"></div>
+         </div>
+ 
+         <div class="sign " id="alarmBell"><i class="fa fa-bell"></i></div>
+        </div>
+
+        <div class="alarm">
+         <div class="timers">
+
+
+<div>
+    
+    <input type="number"  class="hours" id="Ahour" max="23" min="00" maxlength="2" oninput="rmv()">
+ 
+          
+    <input type="number"  class="minutes" id="Aminute" max="59"   min="00" maxlength="2" oninput="rmv()" >
+  
+  
+     <input type="text"  class="seconds" id="Aseconds" max="59"   min="00" maxlength="2"  oninput="chng()"> 
+
+</div>
+
+             <div class="btns">
+                <button  class="btn btn-primary" id="setBtn" >SET</button>
+                <button  class="btn btn-danger" id="stopBtn">STOP</button>
+            </div>
+
+
+         </div>
+         <div class="description">
+             <p class="text-white" >Alarm Description : </p>
+             <input id="alrmDescr" type="text" >
+         </div>
+         <p id="display" ></p>
+        </div>
+        
+     </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
+
